@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.header-banner{
+    background-color: #3498db; /* Couleur du bandeau */
+    color: #fff; /* Couleur du texte */
+    text-align: center;
+    padding: 10px;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3b82c5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reservationItem {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 600px) {
+    .header-banner {
+        background-color: #3498db; /* Couleur du bandeau */
+        color: #fff; /* Couleur du texte */
+        text-align: center;
+        padding: 10px;
+    }
+
+    #app {
+        padding: 10px;
+    }
+
+    form, #reservationsList {
+        margin-top: 10px;
+    }
+}

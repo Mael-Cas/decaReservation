@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Réservations d'articles</title>
+</head>
+<body>
+<div id="app">
+    <header class="header-banner">
+        <h1>Deca Reservation</h1>
+    </header>
+
+
+    <form id="reservationForm">
+        <label for="nomReservateur">Nom:</label>
+        <input type="text" id="nomReservateur" name="nomReservateur" >
+
+        <label for="article">Article:</label>
+        <input type="text" id="article" name="article" required>
+
+        <label for="commentaire">Commentaire:</label>
+        <textarea id="commentaire" name="commentaire" required></textarea>
+
+        <button type="submit" onclick="ajouterReservation()">Ajouter Réservation</button>
+    </form>
+
+    <div id="reservationsList"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
