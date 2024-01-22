@@ -81,7 +81,7 @@ app.delete('/supprimer-reservation/:id', async (req, res) => {
 
 
 // Port d'écoute du serveur
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10002;
 app.listen(port, () => {
     console.log(`serveur démarré : http://localhost:${port}`)
 });
