@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             redirect: 'follow'
         };
 
-        fetch("http://localhost:3000/reservation", requestOptions)
+        fetch("/reservation", requestOptions)
             .then(response => response.json())
             .then(reservations => afficherReservations(reservations))
             .then(result => console.log(result))
