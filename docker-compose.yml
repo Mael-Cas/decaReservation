@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  app:
+    build: .
+    environment:
+      DB_HOST: db
+    restart: always
+    ports:
+      - '10002:10002'
+  db:
+    image: mongo
+    restart: always
